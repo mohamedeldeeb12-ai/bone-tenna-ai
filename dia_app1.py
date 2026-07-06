@@ -20,7 +20,7 @@ st.markdown("""
 # --- Model Loading ---
 @st.cache_resource
 def load_models():
-    scaler = joblib.load('scaler.joblib')
+    scaler = joblib.load('glucose_scaler.joblib')
     reg_model = joblib.load('glucose_reg_model.joblib')
     clf_model = joblib.load('ensemble_clf_model.joblib')
     return scaler, reg_model, clf_model
